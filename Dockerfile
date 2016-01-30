@@ -9,6 +9,7 @@ EXPOSE 9419
 EXPOSE 9420
 EXPOSE 9421
 
-RUN 
+COPY ./run-master /usr/local/bin/run-master
+RUN chmod -Rv 777 /usr/local/bin/* ; 
 
 CMD ["/usr/local/bin/run-master"]
